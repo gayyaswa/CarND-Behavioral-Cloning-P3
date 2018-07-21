@@ -16,13 +16,13 @@ The goals / steps of this project are the following:
 
 [image1]: ./nvidia-cnn-architecture.png "NVIDIA CNN Architecture"
 [image2]: ./examples/steer_left/left_2018_07_20_00_14_58_195.png "steer left1 recovery"
-[image3]: ./examples/steer_left/left_2018_07_20_00_14_59_050.png "steer left2 recovery"
-[image4]: ./examples/steer_left/left_2018_07_20_00_15_01_045.png "steer left3 recovery"
-[image5]: ./examples/steer_left/left_2018_07_20_00_15_02_159.png "steer left5 recovery"
-[image6]: ./examples/steer_right/right_2018_07_20_00_29_29_197.png "steer right1 recovery"
-[image7]: ./examples/steer_right/right_2018_07_20_00_29_29_476.png "steer right2 recovery"
-[image8]: ./examples/steer_right/right_2018_07_20_00_29_30_062.png "steer right3 recovery"
-[image9]: ./examples/steer_right/right_2018_07_20_00_29_31_189.png "steer right4 recovery"
+[image3]: ./examples/steer_left/left_2018_07_20_00_14_59_050.jpg "steer left2 recovery"
+[image4]: ./examples/steer_left/left_2018_07_20_00_15_01_045.jpg "steer left3 recovery"
+[image5]: ./examples/steer_left/left_2018_07_20_00_15_02_159.jpg "steer left4 recovery"
+[image6]: ./examples/steer_right/right_2018_07_20_00_29_29_197.jpg "steer right1 recovery"
+[image7]: ./examples/steer_right/right_2018_07_20_00_29_29_476.jpg "steer right2 recovery"
+[image8]: ./examples/steer_right/right_2018_07_20_00_29_30_062.jpg "steer right3 recovery"
+[image9]: ./examples/steer_right/right_2018_07_20_00_29_31_189.jpg "steer right4 recovery"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -44,17 +44,14 @@ The submission includes model.h5 which can be run in autonomous mode with the sc
 
 #### 3. Submission code is usable and readable
 
-The model.py checked in part of repo contains the CNN implementation based on the NVIDIA architecture published here https://devblogs.nvidia.com/deep-learning-self-driving-cars/.
+The model.py checked in part of repo contains the CNN implementation based on the NVIDIA architecture.
 
 
 ### Model Architecture and Training Strategy
 
 #### 1. An appropriate model architecture has been employed
 
-As suggested in the lecture tried simple neural network to familiar with the process of training and running the network model using the
-simulator. I tried implementing the Lenet from previous exercise and observed the vehicle was going straight but decided upon the NVIDIA CNN as it is complex with various layer and more nodes tested in real world to extract the features and act as a steering controller.
-
-I implemented the network using Keras by following the lecture and using the architecture imaage from NVIDIA for reference here 
+I implemented the network using Keras by following the lecture and using the architecture image from NVIDIA for reference here published here https://devblogs.nvidia.com/deep-learning-self-driving-cars/.
 
 #### 2. Attempts to reduce overfitting in the model
 
@@ -73,20 +70,10 @@ For details about how I created the training data, see the next section.
 ### Model Architecture and Training Strategy
 
 #### 1. Solution Design Approach
+* As suggested in the lecture tried simple neural network to familiar with the process of training and running the network model using the simulator. 
+* I tried implementing the Lenet from previous exercise and observed the vehicle was going straight
+* I decided upon the NVIDIA CNN as it is complex with various layer and more nodes tested in real world to extract the features and act as a steering controller.
 
-The overall strategy for deriving a model architecture was to ...
-
-My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
-
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
-
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
-
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
 #### 2. Final Model Architecture
 
