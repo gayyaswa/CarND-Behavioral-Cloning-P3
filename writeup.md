@@ -50,19 +50,20 @@ The model.py checked in part of repo contains the CNN implementation based on th
 #### 1. An appropriate model architecture has been employed
 
 As suggested in the lecture tried simple neural network to familiar with the process of training and running the network model using the
-simulator. I tried implementing the Lenet from previous exercise and observed the vehicle was going straight but decided upon the NVIDIA CNN as it is complex with various layer and more nodes tested in real world.
+simulator. I tried implementing the Lenet from previous exercise and observed the vehicle was going straight but decided upon the NVIDIA CNN as it is complex with various layer and more nodes tested in real world to extract the features and act as a steering controller.
 
 I implemented the network using Keras by following the lecture and using the architecture imaage from NVIDIA for reference here 
 
 #### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
-
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+I tried implementing without the dropout layer and managed to succeed a lap also the validation loss is in closer range in comparison to training loss. But still try adding a dropout layer in the first fully connected layer and observed a slight decrease in the validation loss and the vehicle was still completing the lap in autonomous mode. Based on this I think overfitting isn't a concern for the dataset used in this project
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+The final model used an adam optimizer tried model with default learning rate which is -01 and worked well. During training I did tried to decreasing the learning rate -001 but didn't help much.
+
+Training the network with more data for left and right steering and augumenting the steering angle for the left and right camera images did help completing the lap
+
 
 #### 4. Appropriate training data
 
