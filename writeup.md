@@ -62,12 +62,9 @@ I tried implementing without the dropout layer and managed to succeed a lap also
 
 The final model used an adam optimizer tried model with default learning rate which is -01 and worked well. During training I did tried to decreasing the learning rate -001 but didn't help much.
 
-Training the network with more data for left and right steering and augumenting the steering angle for the left and right camera images did help completing the lap
-
-
 #### 4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Using the center image provided with data set was able to steer the vehicle straight also collected the data from simulator for steer left and right recovery which did help the vehicle steer left and right. But the steering wasn't smooth it did recover from few crashes so to smoothen the steering behavior augumented the steering angles by +0.15 and -0.15 for left and right images respectively
 
 For details about how I created the training data, see the next section. 
 
