@@ -1,9 +1,5 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Behavioral Cloning Project**
@@ -53,9 +49,10 @@ The model.py checked in part of repo contains the CNN implementation based on th
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+As suggested in the lecture tried simple neural network to familiar with the process of training and running the network model using the
+simulator. I tried implementing the Lenet from previous exercise and observed the vehicle was going straight but decided upon the NVIDIA CNN as it is complex with various layer and more nodes tested in real world.
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+I implemented the network using Keras by following the lecture and using the architecture imaage from NVIDIA for reference here 
 
 #### 2. Attempts to reduce overfitting in the model
 
