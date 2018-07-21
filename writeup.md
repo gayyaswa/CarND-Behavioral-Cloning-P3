@@ -1,9 +1,5 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Behavioral Cloning Project**
@@ -38,39 +34,37 @@ My project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
+* video.mp4 contains a recorded lap in autonomous mode
+* writeup_report.md summarizing the results
 
 #### 2. Submission includes functional code
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
-```sh
-python drive.py model.h5
-```
+The submission includes model.h5 which can be run in autonomous mode with the script drive.py provided part of the repo 
 
 #### 3. Submission code is usable and readable
 
-The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py checked in part of repo contains the CNN implementation based on the NVIDIA architecture published here https://devblogs.nvidia.com/deep-learning-self-driving-cars/.
+
 
 ### Model Architecture and Training Strategy
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 3x3 filter sizes and depths between 32 and 128 (model.py lines 18-24) 
+As suggested in the lecture tried simple neural network to familiar with the process of training and running the network model using the
+simulator. I tried implementing the Lenet from previous exercise and observed the vehicle was going straight but decided upon the NVIDIA CNN as it is complex with various layer and more nodes tested in real world to extract the features and act as a steering controller.
 
-The model includes RELU layers to introduce nonlinearity (code line 20), and the data is normalized in the model using a Keras lambda layer (code line 18). 
+I implemented the network using Keras by following the lecture and using the architecture imaage from NVIDIA for reference here 
 
 #### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers in order to reduce overfitting (model.py lines 21). 
-
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 10-16). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+I tried implementing without the dropout layer and managed to succeed a lap also the validation loss is in closer range in comparison to training loss. But still try adding a dropout layer in the first fully connected layer and observed a slight decrease in the validation loss and the vehicle was still completing the lap in autonomous mode. Based on this I think overfitting isn't a concern for the dataset used in this project
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 25).
+The final model used an adam optimizer tried model with default learning rate which is -01 and worked well. During training I did tried to decreasing the learning rate -001 but didn't help much.
 
 #### 4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Using the center image provided with data set was able to steer the vehicle straight also collected the data from simulator for steer left and right recovery which did help the vehicle steer left and right. But the steering wasn't smooth it did recover from few crashes so to smoothen the steering behavior augumented the steering angles by +0.15 and -0.15 for left and right images respectively
 
 For details about how I created the training data, see the next section. 
 
