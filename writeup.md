@@ -14,13 +14,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/placeholder.png "Model Visualization"
-[image2]: ./examples/placeholder.png "Grayscaling"
-[image3]: ./examples/placeholder_small.png "Recovery Image"
-[image4]: ./examples/placeholder_small.png "Recovery Image"
-[image5]: ./examples/placeholder_small.png "Recovery Image"
-[image6]: ./examples/placeholder_small.png "Normal Image"
-[image7]: ./examples/placeholder_small.png "Flipped Image"
+[image1]: ./nvidia-cnn-architecture.png "NVIDIA CNN Architecture"
+[image2]: ./examples/steer_left/left_2018_07_20_00_14_58_195.png "steer left1 recovery"
+[image3]: ./examples/steer_left/left_2018_07_20_00_14_59_050.png "steer left2 recovery"
+[image4]: ./examples/steer_left/left_2018_07_20_00_15_01_045.png "steer left3 recovery"
+[image5]: ./examples/steer_left/left_2018_07_20_00_15_02_159.png "steer left5 recovery"
+[image6]: ./examples/steer_right/right_2018_07_20_00_29_29_197.png "steer right1 recovery"
+[image7]: ./examples/steer_right/right_2018_07_20_00_29_29_476.png "steer right2 recovery"
+[image8]: ./examples/steer_right/right_2018_07_20_00_29_30_062.png "steer right3 recovery"
+[image9]: ./examples/steer_right/right_2018_07_20_00_29_31_189.png "steer right4 recovery"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
