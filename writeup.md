@@ -38,17 +38,16 @@ My project includes the following files:
 * model.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode
 * model.h5 containing a trained convolution neural network 
-* writeup_report.md or writeup_report.pdf summarizing the results
+* video.mp4 contains a recorded lap in autonomous mode
+* writeup_report.md summarizing the results
 
 #### 2. Submission includes functional code
-Using the Udacity provided simulator and my drive.py file, the car can be driven autonomously around the track by executing 
-```sh
-python drive.py model.h5
-```
+The submission includes model.h5 which can be run in autonomous mode with the script drive.py provided part of the repo 
 
 #### 3. Submission code is usable and readable
 
-The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
+The model.py checked in part of repo contains the CNN implementation based on the NVIDIA architecture published here https://devblogs.nvidia.com/deep-learning-self-driving-cars/.
+
 
 ### Model Architecture and Training Strategy
 
