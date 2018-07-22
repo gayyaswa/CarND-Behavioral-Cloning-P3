@@ -98,15 +98,15 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 * Center images from the provided data set is used to train the network and was able to acheive the straight steer training behavior
 but it crashed in the left turn near.
 * To train with steer left behaviour captured several recovery images across the track and ended up collecting approximately 7000 samples refer to sample images below
-![alt text][image2]
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
+
+ ![image2] | ![image3]
+ --------- | ------------
+ ![image4] | ![image5] 
+
 * To train with steer right behviour drove the vehicle in clockwise direction and captured several recovery images across the track and collected around 6500 samples refer to sample images below
-![alt text][image6]
-![alt text][image7]
-![alt text][image8]
-![alt text][image9]
+ ![image6] | ![image7]
+ --------- | ------------
+ ![image8] | ![image9]
 
 ###### Data Augumentation and smoothing steering behaviour
 
