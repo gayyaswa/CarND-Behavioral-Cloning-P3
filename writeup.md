@@ -77,13 +77,25 @@ For details about how I created the training data, see the next section.
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py lines 18-24) consisted of a convolution neural network with the following layers and layer sizes ...
+The final model architecture (model.py lines 97-110) consisted of a convolution neural network with the following layers and layer sizes. Add a final ouput layer of single node so that the network will be trained to output one steering control angle.
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
 
 ![alt text][image1]
 
 #### 3. Creation of the Training Set & Training Process
+
+##### Image Preprocessing
+
+* The camera are cropped to remove the hood of the car, moutains, lakes and trees by using the top and bottom parameter. Cropping is done part of the model so it can be done using GPU to acheive better performance
+
+* As part of preprocessing the images are normalized and mean centereed to 0.5 which helped reducing the error and improve the training loss
+
+* The images from the dataset are split between 80% and 20% for training and validation respectively
+
+##### Steps followed to capture the driving behaviour
+
+* 
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
