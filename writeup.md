@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./nvidia-cnn-architecture.png "NVIDIA CNN Architecture"
-[image2]: ./examples/steer_left/left_2018_07_20_00_14_58_195.png "steer left1 recovery"
+[image2]: ./examples/steer_left/left_2018_07_20_00_14_58_195.jpg "steer left1 recovery"
 [image3]: ./examples/steer_left/left_2018_07_20_00_14_59_050.jpg "steer left2 recovery"
 [image4]: ./examples/steer_left/left_2018_07_20_00_15_01_045.jpg "steer left3 recovery"
 [image5]: ./examples/steer_left/left_2018_07_20_00_15_02_159.jpg "steer left4 recovery"
