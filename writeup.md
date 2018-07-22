@@ -24,10 +24,6 @@ The goals / steps of this project are the following:
 [image8]: ./examples/steer_right/right_2018_07_20_00_29_30_062.jpg "steer right3 recovery"
 [image9]: ./examples/steer_right/right_2018_07_20_00_29_31_189.jpg "steer right4 recovery"
 
-## Rubric Points
-### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
-
----
 ### Files Submitted & Code Quality
 
 #### 1. Submission includes all required files and can be used to run the simulator in autonomous mode
@@ -55,7 +51,7 @@ I implemented the NVIDIA CNN using Keras by following the lecture and here is th
 
 #### 2. Attempts to reduce overfitting in the model
 
-I tried implementing without the dropout layer and managed to succeed a lap also the validation loss is in closer range in comparison to training loss. But still try adding a dropout layer in the first fully connected layer and observed a slight decrease in the validation loss and the vehicle was still completing the lap in autonomous mode. Based on this I think overfitting isn't a concern for the dataset used in this project
+I tried implementing without the dropout layer and managed to succeed a lap also the validation loss is in closer range in comparison to training loss. But still try adding a dropout layer in the first fully connected layer and observed a slight decrease in the validation loss and the vehicle was still completing the lap in autonomous mode. Based on this I believe overfitting isn't a concern for the dataset used in this project
 
 #### 3. Model parameter tuning
 
