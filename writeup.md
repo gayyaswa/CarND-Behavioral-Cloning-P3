@@ -63,7 +63,7 @@ The final model used an adam optimizer tried model with default learning rate wh
 
 #### 4. Appropriate training data
 
-Using the center images provided with data set was able to steer the vehicle straight also collected the data from simulator by simulating steer left and right recovery which did help the vehicle steer left and right. But the steering wasn't smooth eventhough it did recover from few crashes, so to smoothen the steering behavior augumented the steering angles by +0.15 and -0.15 for left and right images respectively. So overall was able to train the vehicle with 40000 samples and finish the lap.
+Using the center images provided with data set was able to steer the vehicle straight also collected the data from simulator by simulating steer left and right recovery which did help the vehicle steer left and right. But the steering wasn't smooth eventhough it did recover from few crashes, so to smoothen the steering behavior augumented the steering angles by +0.15 and -0.15 for left and right images respectively. Overall was able to train the vehicle with 40000 samples and finish the lap.
 
 For details about how I created the training data, see the next section. 
 
