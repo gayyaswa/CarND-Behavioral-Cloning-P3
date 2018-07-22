@@ -111,7 +111,7 @@ but it crashed in the left turn near.
 ###### Data Augumentation and smoothing steering behaviour
 
 * Even with the capture images from the above step still vehicle went off the road markers in few occassions along the track
-* Also decided to use the left, right camera images from original dataset together with the capture images resulted in 40000 sample approxiamtely and did help learn the steer left and right behavior successfuly
+* So decided to use the left, right camera images from original dataset together with the capture images resulted in 40000 sample approxiamtely and did help learn the steering behavior successfuly
 * For each right and legt images from sample augumented the steering angle by -0.15 and +0.15 respectively which resulted in a smooth steering behavior and also ended up the vehicle staying within the lane markers throughout the track.
 
 ###### Challenges 
