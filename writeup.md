@@ -95,30 +95,31 @@ Here is a visualization of the architecture (note: visualizing the architecture 
 
 ##### Steps followed to capture the driving behaviour
 
-* 
-
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
-
+* Center images from the provided data set is used to train the network and was able to acheive the straight steer training behavior
+and it crashed in the left turn near.
+* To train with steer left behaviour captured several recovery images across the track and ended up collecting approximately 7000 samples refer to sample images below
 ![alt text][image2]
-
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to .... These images show what a recovery looks like starting from ... :
-
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
-
-Then I repeated this process on track two in order to get more data points.
-
-To augment the data sat, I also flipped images and angles thinking that this would ... For example, here is an image that has then been flipped:
-
+* To train with steer right behviour drove the vehicle in clockwise direction and captured several recovery images across the track and collected around 6500 samples refer to sample images below
 ![alt text][image6]
 ![alt text][image7]
+![alt text][image8]
+![alt text][image9]
 
-Etc ....
+###### Data Augumentation and smoothing steering behaviour
 
-After the collection process, I had X number of data points. I then preprocessed this data by ...
+* Even with the capture images from the above step still vehicle went off the road markers in few occassions along the track
+* Decided to use the left right camera images from original dataset together with the capture images resulted in 40000 sample approxiamtely
+* For each right and legt images from sample augumented the steering angle by -0.15 and +0.15 respectively which resulted in a smooth steering behavior and also ended up the vehicle staying within the lane markers throughout the track.
+
+###### Challenges 
+
+* As per the discussion in our community tried training the vehicle with fewer samples for steering left and right
+* Due to fewer samples every run vehicle contradictory steering behavior which I believe the network overfit itself for one steering
+behavior over the other
 
 
-I finally randomly shuffled the data set and put Y% of the data into a validation set. 
+As mentioned in the above section the data is split between 80% and 20% of training and validation respectively. Also modifying the default learning rate of adam optimizer to 0.001 didn't help in achieving the desired steering behvior
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by ... I used an adam optimizer so that manually training the learning rate wasn't necessary.
