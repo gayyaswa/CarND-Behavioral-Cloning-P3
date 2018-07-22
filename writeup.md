@@ -73,7 +73,7 @@ For details about how I created the training data, see the next section.
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py lines 97-110) consisted of a convolution neural network with the following layers and layer sizes. Added a final ouput layer of single node so that the network will be trained to output one steering control angle.
+The final model architecture (model.py lines 8-35) consisted of a convolution neural network with the following layers and layer sizes. Added a final ouput layer of single node so that the network will be trained to output one steering control angle.
 
 Here is a visualization of the architecture (note: visualizing the architecture is optional according to the project rubric)
 
